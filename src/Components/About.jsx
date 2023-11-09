@@ -1,3 +1,5 @@
+import Particulars from './Components/Particulars'
+
 function About() {
     return (
         <>
