@@ -1,4 +1,4 @@
-import Particulars from './Components/Particulars'
+import Particulars from './Particulars'
 
 function About() {
     return (
