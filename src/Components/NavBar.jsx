@@ -6,11 +6,11 @@ function NavBar() {
                 <li><strong>5HOKO</strong></li>
             </ul>
             <ul>
-                <li><button type="button" className="contrast">About</button></li>
-                <li><button type="button" className="contrast">Skills</button></li>
-                <li><button type="button" className="contrast">Projects</button></li>
-                <li><button type="button" className="contrast">Testimonials</button></li>
-                <li><button type="button" className="contrast">Contact</button></li>
+                <li><a href="https://www.google.com/" className="contrast">About</a></li>
+                <li><a href="https://www.google.com/" className="contrast">Skills</a></li>
+                <li><a href="https://www.google.com/" className="contrast">Projects</a></li>
+                <li><a href="https://www.google.com/" className="contrast">Testimonials</a></li>
+                <li><a href="https://www.google.com/" className="contrast">Contact</a></li>
             </ul>
             <ul>
 
