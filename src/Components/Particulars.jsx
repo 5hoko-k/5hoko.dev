@@ -1,6 +1,6 @@
 function Particulars () {
     return (
-        <>
+        <> 
         <hgroup>
             <h1>Shoko S. Kimera</h1>
             <h2>I code and stuff</h2>

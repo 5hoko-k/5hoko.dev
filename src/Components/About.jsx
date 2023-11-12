@@ -4,14 +4,22 @@ function About() {
     return (
         <>
             <section>
-                <Particulars />
-                <div className='container-fluid'>
-                    <nav>
-                        <ul>
-                            <li><a href='#' role='button' className='secondary'>Work with me</a></li>
-                            <li><a href='#' role='button' className='contrast'>See my past work</a></li>
-                        </ul>
-                    </nav>
+                <div className='grid'>
+                    <div className='container-fluid'>
+                        <Particulars />
+                        <div className='container-fluid'>
+                            <nav>
+                                <ul>
+                                    <li><a href='#' role='button' className='secondary'>Work with me</a></li>
+                                    <li><a href='#' role='button' className='contrast'>See my past work</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    
+                    <figure>
+                        <img src="/5hoko.jpg" alt='Shoko' />
+                    </figure>
                 </div>
             </section>
         </>
