@@ -3,3 +3,18 @@ export const skills = {
     frameworks: [ 'React', 'FastAPI' ],
     databases: [ 'MySQL', 'MongoDB', 'GraphQL' ]
 }
+
+export const projects = [
+    { title: '5hoko\'s Anime Archive',
+    image: '',
+    description: 'A library record of Anime experienced by 5hoko himself',
+    link: 'https://5-aa.vercel.app/' },
+    { title: 'Somn',
+    image: '',
+    description: 'About that somn',
+    link: 'https://www.google.com/' },
+    { title: 'Somn',
+    image: '',
+    description: 'About that somn',
+    link: 'https://www.google.com/' }
+]
