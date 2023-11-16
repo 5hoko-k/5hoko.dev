@@ -6,11 +6,10 @@ function Projects() {
         <section>
             
             <h1>Projects</h1>
-            
             <div className="grid">
                 {projects.map(({ title, description, link, image }) => {
                     return (
-                        <article>
+                        <article key={title}>
                             Project Image
                             <footer>
                                 <h5>{title}</h5>
