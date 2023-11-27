@@ -19,22 +19,25 @@ export const projects = [
     link: 'https://www.google.com/' }
 ]
 
-const testimonials = [
+export const testimonials = [
     {
         name: 'Name 1',
         quote: 'Quote 1',
+        image: '/5hoko.jpg',
         company: 'Company 1',
         position: 'Position 1'
     },
     {
         name: 'Name 2',
         quote: 'Quote 2',
+        image: '/5hoko.jpg',
         company: 'Company 2',
         position: 'Position 2'
     },
     {
         name: 'Name 3',
         quote: 'Quote 3',
+        image: '/5hoko.jpg',
         company: 'Company 3',
         position: 'Position 3'
     }
