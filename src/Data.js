@@ -18,3 +18,24 @@ export const projects = [
     description: 'About that somn',
     link: 'https://www.google.com/' }
 ]
+
+const testimonials = [
+    {
+        name: 'Name 1',
+        quote: 'Quote 1',
+        company: 'Company 1',
+        position: 'Position 1'
+    },
+    {
+        name: 'Name 2',
+        quote: 'Quote 2',
+        company: 'Company 2',
+        position: 'Position 2'
+    },
+    {
+        name: 'Name 3',
+        quote: 'Quote 3',
+        company: 'Company 3',
+        position: 'Position 3'
+    }
+]
