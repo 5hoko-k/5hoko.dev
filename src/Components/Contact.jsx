@@ -21,19 +21,26 @@ function Contact() {
                 </hgroup>
             </div>
         </div>
-        <form>
-            <label>
-                Name
-            </label>
-            <input />
-            <label>
-                Email
-            </label>
-            <input />
-            <label>
-                Message
-            </label>
-            <input />
+        <form netlify name='contact-form'> 
+            <div className="grid">
+                <div>
+                    <label>
+                        Name
+                    </label>
+                    <input type='text' name='name' placeholder="Your name" required/>
+                </div>
+                <div>
+                    <label>
+                        Email
+                    </label>
+                    <input type='text' name='email' placeholder="Email address" required/>
+                </div>
+            </div>
+                <label>
+                    Message
+                </label>
+                <textarea name="text-area"></textarea>
+
 
         </form>
         
