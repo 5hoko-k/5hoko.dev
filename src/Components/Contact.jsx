@@ -1,4 +1,28 @@
+import { useState } from "react";
+
 function Contact() {
+    const [name, setName] = useState()
+    const [email, setEmail] = useState()
+    const [message, setMessage] = useState()
+
+    function encode(data) {
+        return Object.keys(data)
+          .map(
+            (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+          )
+          .join("&");
+      }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact-form", name, email, message }),
+          })
+            .then(() => alert("Message sent!"))
+            .catch((error) => alert(error));
+    }
     return (
         <>
         <h2>Contact</h2>
@@ -33,21 +57,22 @@ function Contact() {
                             <label>
                                 Name
                             </label>
-                            <input type='text' name='name' placeholder="Your name" required/>
+                            <input type='text' name='name' placeholder="Your name" required onChange={(e) => setName(e.target.value)} />
                         </div>
                         <div>
                             <label>
                                 Email
                             </label>
-                            <input type='text' name='email' placeholder="Email address" required/>
+                            <input type='text' name='email' placeholder="Email address" required onChange={(e) => setEmail(e.target.value)}/>
                             <small>We'll never share your email without concent</small>
                         </div>
                     </div>
                         <label>
                             Message
                         </label>
-                        <textarea name="message"></textarea>
+                        <textarea name="message"  onChange={(e) => setMessage(e.target.value)}></textarea>
                         <button type='submit'>Submit</button>
+
                 </form>
             </article>
         
