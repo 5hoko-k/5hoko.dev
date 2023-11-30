@@ -50,7 +50,7 @@ function Contact() {
 
             {/* contact form */}
             <article>
-                <form netlify name='contact-form' method="POST"> 
+                <form netlify name='contact-form' onSubmit={handleSubmit}> 
                     <div className="grid">
                         <div>
                             <input type='hidden' name="form-name" value='contact-form' />
