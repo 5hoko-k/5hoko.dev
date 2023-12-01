@@ -3,7 +3,7 @@ import Particulars from './Particulars'
 function About() {
     return (
         <>
-            <section>
+            <section id='about'>
                 <div className='grid'>
                     <div className='container-fluid'>
                         <Particulars />

@@ -3,7 +3,7 @@ import { skills } from "../Data";
 function Skills() {
     return (
         <>
-        <section className="">
+        <section id="skills">
             <h2>Skills</h2>
             <div className="container-fluid">
                 <hgroup>
