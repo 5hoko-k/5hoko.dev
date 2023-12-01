@@ -13,7 +13,7 @@ function NavBar() {
                 <li><a href="#contact" className="contrast">Contact</a></li>
             </ul>
             <ul>
-
+                <li><a href="#contact" role="button" className="fund-me-button">fund me</a></li>
             </ul>
         </nav>
         </>
