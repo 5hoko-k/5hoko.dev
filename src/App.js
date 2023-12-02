@@ -10,8 +10,8 @@ import '@picocss/pico'
 function App() {
   return (
     <>
-      <main className="container">
-        <NavBar />
+      <NavBar />
+      <main className="container body-margin">
         <About />
         <Skills />
         <Projects />

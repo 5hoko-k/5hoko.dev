@@ -1,7 +1,7 @@
 function NavBar() {
     return (
         <>
-        <nav>
+        <nav className="sticky-navbar container-fluid">
             <ul>
                 <li><strong>5HOKO</strong></li>
             </ul>
