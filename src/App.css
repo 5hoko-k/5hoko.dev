@@ -22,13 +22,17 @@
   margin: 100px;
 }
 
+.section {
+  min-height: 100vh;
+}
+
 /* For medium and larger devices */
 @media (min-width: 768px) {
   .sticky-navbar {
     position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 1000; /* Adjust z-index as needed */
+    /* width: 100%;
+    /* z-index: 1000; /* Adjust z-index as needed */
   }
 }
 

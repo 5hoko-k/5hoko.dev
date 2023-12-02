@@ -3,7 +3,7 @@ import { testimonials } from "../Data";
 function Testimonials() {
     return (
         <>
-        <section id='testimonials'>
+        <section id='testimonials' className="section">
             <h2>Testimonials</h2>
             <div className="grid">
                 {testimonials.map((tMonial) => {
