@@ -26,6 +26,11 @@
   min-height: 100vh;
 }
 
+.navbar-hidden {
+  visibility: hidden; /* Hide the navbar by moving it off-screen */
+  transition: 1s ease-out;
+}
+
 /* For medium and larger devices */
 @media (min-width: 768px) {
   .sticky-navbar {
@@ -33,6 +38,7 @@
     top: 0;
     /* width: 100%;
     /* z-index: 1000; /* Adjust z-index as needed */
+    transition: top 0.3s; /* Add a smooth transition effect */
   }
 }
 

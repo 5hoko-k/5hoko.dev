@@ -1,7 +1,33 @@
+import React, { useEffect, useState } from 'react';
+
 function NavBar() {
+    const [showNav, setShowNav] = useState(true)
+    const [prevScrollY, setPrevScrollY] = useState(0)
+    
+    useEffect(() => {
+        const handleScroll = () => {
+            console.log('scroll Y' + window.scrollY)
+            // console.log('page Y Offset' + window.pageYOffset)
+    
+            if (window.scrollY > prevScrollY && window.scrollY > 650){
+                setShowNav(false)
+            }else {
+                setShowNav(true)
+            }
+            setPrevScrollY(window.scrollY)
+    
+            console.log(showNav)
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+        window.removeEventListener('scroll', handleScroll);
+        };
+    }, [showNav, prevScrollY]);
+
     return (
         <>
-        <nav className="sticky-navbar container-fluid">
+        <nav className={`sticky-navbar container-fluid ${!showNav && `navbar-hidden`}`}>
             <ul>
                 <li><strong>5HOKO</strong></li>
             </ul>
