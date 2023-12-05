@@ -39,7 +39,7 @@ function NavBar() {
                 <li><a href="#contact" className="contrast">Contact</a></li>
             </ul>
             <ul>
-                <li><a href="#contact" role="button" className="fund-me-button">fund me</a></li>
+                <li><a href="https://github.com/5hoko-k/portfolio" className="site-repo-button">Site Repo</a></li>
             </ul>
         </nav>
         </>

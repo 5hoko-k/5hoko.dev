@@ -1,4 +1,4 @@
-.fund-me-button {
+.site-repo-button {
   padding: 8px 16px; /* Adjust padding as needed */
   border-radius: 20px; /* Makes the button pill-shaped by setting the border radius */
   background-color: yellow; /* Yellow background color */
@@ -9,6 +9,10 @@
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.site-repo-button:hover {
+  background-color: #ffd60a; /* Yellow background color */
 }
 
 .container-2 {
