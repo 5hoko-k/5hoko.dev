@@ -27,7 +27,7 @@ function NavBar() {
 
     return (
         <>
-        <nav className={`sticky-navbar container-fluid ${!showNav && `navbar-hidden`}`}>
+        <nav className={showNav ? 'sticky-navbar container-fluid' : 'navbar-hidden container-fluid'}>
             <ul>
                 <li><strong>5HOKO</strong></li>
             </ul>

@@ -27,8 +27,15 @@
 }
 
 .navbar-hidden {
-  visibility: hidden; /* Hide the navbar by moving it off-screen */
-  transition: 1s ease-out;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition:
+    opacity 1s,
+    visibility 1s;
+  /* Equivalent to
+  transition: all 1s allow-discrete; */
 }
 
 /* For medium and larger devices */
@@ -36,9 +43,11 @@
   .sticky-navbar {
     position: fixed;
     top: 0;
-    /* width: 100%;
-    /* z-index: 1000; /* Adjust z-index as needed */
-    transition: top 0.3s; /* Add a smooth transition effect */
+    visibility: visible;
+    opacity: 1;
+    transition:
+      opacity 1s,
+      visibility 1s ;
   }
 }
 
