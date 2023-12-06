@@ -55,6 +55,41 @@
   }
 }
 
+/* Navbar Styles */
+.navbar {
+  backdrop-filter: blur(5px); /* Blur effect for modern browsers */
+  -webkit-backdrop-filter: blur(5px); /* Blur effect for Safari */
+}
+
+.nav-link {
+  color: #fff;
+}
+
+/* Hover and Focus Effects */
+.nav-link:hover,
+.nav-link:focus {
+  color: #fff; /* Change text color on hover/focus */
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Transition effects */
+
+  /* Blurred text-shadow */
+  text-shadow: 0 0 5px rgba(142, 154, 175, 0.8); /* Adjust the shadow color and strength */
+  /* Add a slight animation for the text shadow */
+  animation: shadow-pulse 1s infinite;
+}
+
+/* Text Shadow Pulse Animation */
+@keyframes shadow-pulse {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+}
+
 
 .App {
   text-align: center;

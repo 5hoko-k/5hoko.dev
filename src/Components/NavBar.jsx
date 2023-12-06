@@ -27,16 +27,16 @@ function NavBar() {
 
     return (
         <>
-        <nav className={showNav ? 'sticky-navbar container-fluid' : 'navbar-hidden container-fluid'}>
+        <nav className={showNav ? 'sticky-navbar container-fluid navbar' : 'navbar-hidden container-fluid navbar'}>
             <ul>
                 <li><strong>5HOKO</strong></li>
             </ul>
             <ul>
-                <li><a href="#about" className="contrast">About</a></li>
-                <li><a href="#skills" className="contrast">Skills</a></li>
-                <li><a href="#projects" className="contrast">Projects</a></li>
-                <li><a href="#testimonials" className="contrast">Testimonials</a></li>
-                <li><a href="#contact" className="contrast">Contact</a></li>
+                <li><a href="#about" className="contrast nav-link">About</a></li>
+                <li><a href="#skills" className="contrast nav-link">Skills</a></li>
+                <li><a href="#projects" className="contrast nav-link">Projects</a></li>
+                <li><a href="#testimonials" className="contrast nav-link">Testimonials</a></li>
+                <li><a href="#contact" className="contrast nav-link">Contact</a></li>
             </ul>
             <ul>
                 <li><a href="https://github.com/5hoko-k/portfolio" className="site-repo-button">Site Repo</a></li>
