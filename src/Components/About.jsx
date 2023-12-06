@@ -5,7 +5,7 @@ function About() {
         <>
             <section id='about' className="section">
                 <div className='grid'>
-                    <div className='container-fluid'>
+                    <div className='container-fluid mx-auto'>
                         <Particulars />
                         <div className='container-fluid'>
                             <nav>
@@ -18,7 +18,7 @@ function About() {
                     </div>
                     
                     <figure>
-                        <img src="/5hoko.jpg" alt='Shoko' />
+                        <img src="/5hoko.jpg" alt='Shoko' className='my-image' />
                     </figure>
                 </div>
             </section>

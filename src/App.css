@@ -26,6 +26,15 @@
   margin: 100px;
 }
 
+.my-image {
+
+}
+
+.mx-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .section {
   min-height: 100vh;
 }
@@ -62,17 +71,16 @@
 }
 
 .nav-link {
-  color: #fff;
+
 }
 
 /* Hover and Focus Effects */
 .nav-link:hover,
 .nav-link:focus {
-  color: #fff; /* Change text color on hover/focus */
-  transition: color 0.3s ease, text-shadow 0.3s ease; /* Transition effects */
+  transition: text-shadow 0.3s ease; /* Transition effects */
 
   /* Blurred text-shadow */
-  text-shadow: 0 0 5px rgba(142, 154, 175, 0.8); /* Adjust the shadow color and strength */
+  text-shadow: 0 0 5px rgb(142, 154, 175); /* Adjust the shadow color and strength */
   /* Add a slight animation for the text shadow */
   animation: shadow-pulse 1s infinite;
 }
