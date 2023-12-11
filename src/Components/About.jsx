@@ -16,10 +16,7 @@ function About() {
                             </nav>
                         </div>
                     </div>
-                    
-                    <figure>
-                        <img src="/5hoko.jpg" alt='Shoko' className='my-image' />
-                    </figure>
+                        <div className='my-image'></div>
                 </div>
             </section>
         </>

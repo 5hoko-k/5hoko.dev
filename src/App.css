@@ -27,7 +27,12 @@
 }
 
 .my-image {
-
+  background-image: url('../public/5hoko.jpg');
+  width: 500x;
+  height: 500px;
+  background-size: cover; /* or 'contain' */
+  /* you need to match the shadow color to your background or image border for the desired effect*/
+  box-shadow: 0 0 20px 20px rgb(255, 255, 255) inset;
 }
 
 .mx-auto {
@@ -77,10 +82,10 @@
 /* Hover and Focus Effects */
 .nav-link:hover,
 .nav-link:focus {
-  transition: text-shadow 0.3s ease; /* Transition effects */
+    /* Blurred text-shadow */
+    text-shadow: 0 0 5px rgb(0, 0, 0); /* Adjust the shadow color and strength */
+    transition: text-shadow 0.5s ease; /* Transition effects */
 
-  /* Blurred text-shadow */
-  text-shadow: 0 0 5px rgb(142, 154, 175); /* Adjust the shadow color and strength */
   /* Add a slight animation for the text shadow */
   animation: shadow-pulse 1s infinite;
 }
@@ -88,52 +93,16 @@
 /* Text Shadow Pulse Animation */
 @keyframes shadow-pulse {
   0% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px rgba(142, 154, 175);
   }
   50% {
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 15px rgba(142, 154, 175);
   }
   100% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px rgba(142, 154, 175);
   }
 }
 
 
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -5,13 +5,12 @@ import NavBar from './Components/NavBar';
 import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import Testimonials from './Components/Testimonials';
-import '@picocss/pico'
 
 function App() {
   return (
     <>
       <NavBar />
-      <main className="container body-margin">
+      <main className="body-margin">
         <About />
         <Skills />
         <Projects />
