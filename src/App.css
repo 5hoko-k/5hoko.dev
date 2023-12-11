@@ -71,6 +71,7 @@
 
 /* Navbar Styles */
 .navbar {
+  background-color: rgb(255, 255, 255, 0.8);
   backdrop-filter: blur(5px); /* Blur effect for modern browsers */
   -webkit-backdrop-filter: blur(5px); /* Blur effect for Safari */
 }
@@ -84,7 +85,7 @@
 .nav-link:hover,
 .nav-link:focus {
     /* Blurred text-shadow */
-    text-shadow: 0 0 15px rgb(0, 0, 0, 0.8); /* Adjust the shadow color and strength */
+    text-shadow: 0 0 15px var(--nav-text-shadow-hover); /* Adjust the shadow color and strength */
     /* Apply animation only on hover */
     /* animation: shadow-pulse 1s infinite; */
 }
@@ -118,6 +119,7 @@
   --pico-primary-hover-background: #006d46;
   --pico-primary-focus: rgba(0, 166, 110, 0.25);
   --pico-primary-inverse: #fff;
+  --nav-text-shadow-hover: rgb(0, 0, 0, 0.8);
 }
 
 /* Jade color for dark color scheme (Auto) */
@@ -132,6 +134,7 @@
     --pico-primary-hover-background: #00895a;
     --pico-primary-focus: rgba(0, 180, 120, 0.25);
     --pico-primary-inverse: #fff;
+    --nav-text-shadow-hover: rgb(255, 255, 255, 0.8);
   }
 }
 
@@ -146,6 +149,7 @@
   --pico-primary-hover-background: #00895a;
   --pico-primary-focus: rgba(0, 180, 120, 0.25);
   --pico-primary-inverse: #fff;
+  --nav-text-shadow-hover: rgb(255, 255, 255, 0.8);
 }
 
 
