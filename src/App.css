@@ -76,32 +76,34 @@
 }
 
 .nav-link {
-
+  text-shadow: none;
+  transition: text-shadow 0.3s ease-in-out; /* Transition effects */
 }
 
 /* Hover and Focus Effects */
 .nav-link:hover,
 .nav-link:focus {
     /* Blurred text-shadow */
-    text-shadow: 0 0 5px rgb(0, 0, 0); /* Adjust the shadow color and strength */
-    transition: text-shadow 0.5s ease; /* Transition effects */
-
-  /* Add a slight animation for the text shadow */
-  animation: shadow-pulse 1s infinite;
+    text-shadow: 0 0 15px rgb(0, 0, 0, 0.8); /* Adjust the shadow color and strength */
+    /* Apply animation only on hover */
+    /* animation: shadow-pulse 1s infinite; */
 }
 
 /* Text Shadow Pulse Animation */
-@keyframes shadow-pulse {
+/* @keyframes shadow-pulse {
   0% {
-    text-shadow: 0 0 10px rgba(142, 154, 175);
+    text-shadow: 0 0 10px rgba(0, 0, 0);
   }
   50% {
-    text-shadow: 0 0 15px rgba(142, 154, 175);
+    text-shadow: 0 0 15px rgba(0, 0, 0);
   }
   100% {
-    text-shadow: 0 0 10px rgba(142, 154, 175);
+    text-shadow: 0 0 10px rgba(0, 0, 0);
   }
-}
+} */
+
+
+
 
 
 /* Jade color for light color scheme (Default) */
