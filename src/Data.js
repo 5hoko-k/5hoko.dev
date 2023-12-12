@@ -1,5 +1,9 @@
+import JS from './Logos/javascript-svgrepo-com.svg'
+import python from './Logos/reshot-icon-python-L432GEZMNS.svg'
+import java from './Logos/java-1.svg'
+
 export const skills = {
-    languages: [ 'JavaScript', 'Python', 'Java' ],
+    languages: [ {name: 'JavaScript', logo: JS}, {name: 'Python', logo: python}, {name: 'Java', logo: java} ],
     frameworks: [ 'React', 'FastAPI' ],
     databases: [ 'MySQL', 'MongoDB', 'GraphQL' ]
 }
