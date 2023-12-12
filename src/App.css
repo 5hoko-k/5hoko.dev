@@ -32,7 +32,7 @@
   height: 500px;
   background-size: cover; /* or 'contain' */
   /* you need to match the shadow color to your background or image border for the desired effect*/
-  box-shadow: 0 0 20px 20px rgb(255, 255, 255) inset;
+  box-shadow: 0 0 20px 20px var(--bg-color) inset;
 }
 
 .mx-auto {
@@ -71,7 +71,7 @@
 
 /* Navbar Styles */
 .navbar {
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: var(--nav-bg-color);
   backdrop-filter: blur(5px); /* Blur effect for modern browsers */
   -webkit-backdrop-filter: blur(5px); /* Blur effect for Safari */
 }
@@ -120,6 +120,8 @@
   --pico-primary-focus: rgba(0, 166, 110, 0.25);
   --pico-primary-inverse: #fff;
   --nav-text-shadow-hover: rgb(0, 0, 0, 0.8);
+  --nav-bg-color: rgb(255, 255, 255, 0.8);
+  --bg-color: rgb(255, 255, 255);
 }
 
 /* Jade color for dark color scheme (Auto) */
@@ -135,6 +137,8 @@
     --pico-primary-focus: rgba(0, 180, 120, 0.25);
     --pico-primary-inverse: #fff;
     --nav-text-shadow-hover: rgb(255, 255, 255, 0.8);
+    --nav-bg-color: rgb(19, 23, 31, 0.8);
+    --bg-color: rgb(19, 23, 31);
   }
 }
 
@@ -150,6 +154,8 @@
   --pico-primary-focus: rgba(0, 180, 120, 0.25);
   --pico-primary-inverse: #fff;
   --nav-text-shadow-hover: rgb(255, 255, 255, 0.8);
+  --nav-bg-color: rgb(19, 23, 31, 0.8);
+  --bg-color: rgb(19, 23, 31);
 }
 
 
