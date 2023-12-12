@@ -32,11 +32,11 @@ function NavBar() {
                 <li><strong>5HOKO</strong></li>
             </ul>
             <ul>
-                <li><a href="#about" className="contrast nav-link">About</a></li>
-                <li><a href="#skills" className="contrast nav-link">Skills</a></li>
-                <li><a href="#projects" className="contrast nav-link">Projects</a></li>
-                <li><a href="#testimonials" className="contrast nav-link">Testimonials</a></li>
-                <li><a href="#contact" className="contrast nav-link">Contact</a></li>
+                <li><a href="#about" className="contrast no-decoration"><span className='nav-link'>About</span></a></li>
+                <li><a href="#skills" className="contrast no-decoration"><span className='nav-link'>Skills</span></a></li>
+                <li><a href="#projects" className="contrast no-decoration"><span className='nav-link'>Projects</span></a></li>
+                <li><a href="#testimonials" className="contrast no-decoration"><span className='nav-link'>Testimonials</span></a></li>
+                <li><a href="#contact" className="contrast no-decoration"><span className='nav-link'>Contact</span></a></li>
             </ul>
             <ul>
                 <li><a href="https://github.com/5hoko-k/portfolio" className="site-repo-button">Site Repo</a></li>
