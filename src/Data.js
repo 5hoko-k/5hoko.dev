@@ -1,11 +1,16 @@
 import JS from './Logos/javascript-svgrepo-com.svg'
 import python from './Logos/reshot-icon-python-L432GEZMNS.svg'
 import java from './Logos/java-1.svg'
+import reactLogo from './Logos/react-2.svg'
+import fastAPILogo from './Logos/fastapi-1.svg'
+import mysqlLogo from './Logos/mysql-6.svg'
+import mongoDBLogo from './Logos/mongodb-icon-1.svg'
+import graphQLLogo from './Logos/graphql-logo-2.svg'
 
 export const skills = {
     languages: [ {name: 'JavaScript', logo: JS}, {name: 'Python', logo: python}, {name: 'Java', logo: java} ],
-    frameworks: [ 'React', 'FastAPI' ],
-    databases: [ 'MySQL', 'MongoDB', 'GraphQL' ]
+    frameworks: [ {name: 'React', logo: reactLogo}, {name: 'FastAPI', logo: fastAPILogo} ],
+    databases: [ {name: 'MySQL', logo: mysqlLogo}, {name: 'MongoDB', logo: mongoDBLogo}, {name: 'GraphQL', logo: graphQLLogo} ]
 }
 
 export const projects = [

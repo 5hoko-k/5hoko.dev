@@ -23,7 +23,12 @@ function Skills() {
             <h3>Frameworks</h3>
             <div className="grid">
               {skills.frameworks.map((framework) => {
-                return <h5 key={framework}>{framework}</h5>;
+                return (
+                  <>
+                  <img src={framework.logo} alt={framework.name} />
+                  <h5 key={framework.name}>{framework.name}</h5>
+                  </>
+              )
               })}
             </div>
           </hgroup>
@@ -31,7 +36,12 @@ function Skills() {
             <h3>Databases</h3>
             <div className="grid">
               {skills.databases.map((database) => {
-                return <h5 key={database}>{database}</h5>;
+                return (
+                  <>
+                  <img src={database.logo} alt={database.name} />
+                  <h5 key={database.name}>{database.name}</h5>
+                  </>
+              )
               })}
             </div>
           </hgroup>
