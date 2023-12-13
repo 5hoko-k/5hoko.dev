@@ -5,7 +5,7 @@ function About() {
         <>
             <section id='about' className="section">
                 <div className='grid'>
-                    <div className='container-fluid mx-auto'>
+                    <div className='container-fluid my-auto'>
                         <Particulars />
                         <div className='container-fluid'>
                             <nav>

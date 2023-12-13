@@ -35,7 +35,7 @@
   box-shadow: 0 0 60px 75px var(--bg-color) inset;
 }
 
-.mx-auto {
+.my-auto {
   margin-top: auto;
   margin-bottom: auto;
 }
