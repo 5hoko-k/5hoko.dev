@@ -40,6 +40,16 @@
   margin-bottom: auto;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-icon-style {
+  width: 70px;
+  height: 70px;
+}
+
 .section {
   min-height: 100vh;
 }

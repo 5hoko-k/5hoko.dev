@@ -1,6 +1,6 @@
 import JS from './Logos/javascript-svgrepo-com.svg'
 import python from './Logos/reshot-icon-python-L432GEZMNS.svg'
-import java from './Logos/java-1.svg'
+import java from './Logos/java-14.svg'
 import reactLogo from './Logos/react-2.svg'
 import fastAPILogo from './Logos/fastapi-1.svg'
 import mysqlLogo from './Logos/mysql-6.svg'
