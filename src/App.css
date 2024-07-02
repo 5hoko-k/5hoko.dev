@@ -27,12 +27,14 @@
 }
 
 .my-image {
-  background-image: url('../public/5hoko.jpg');
-  width: 500x;
+  width: 500px;
   height: 500px;
-  background-size: cover; /* or 'contain' */
-  /* you need to match the shadow color to your background or image border for the desired effect*/
   box-shadow: 0 0 60px 75px var(--bg-color) inset;
+}
+.my-image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .my-auto {
