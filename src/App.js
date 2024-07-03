@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <main className="body-margin">
+      <main className="main-margin">
         <About />
         <Skills />
         <Projects />
