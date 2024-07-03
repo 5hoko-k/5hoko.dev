@@ -27,7 +27,7 @@ function NavBar() {
 
     return (
         <>
-        <nav className={showNav ? 'sticky-navbar container-fluid navbar' : 'navbar-hidden container-fluid navbar'}>
+        <nav className={showNav ? 'navbar-visible container-fluid navbar' : 'navbar-hidden container-fluid navbar'}>
             <ul>
                 <li><strong>5HOKO</strong></li>
             </ul>
