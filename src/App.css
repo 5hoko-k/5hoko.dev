@@ -22,8 +22,8 @@
   height: 100vh; /* Adjust as needed */
 }
 
-.body-margin {
-  margin: 80px;
+.main-margin {
+  margin: 6rem;
 }
 
 .my-image {
@@ -74,7 +74,7 @@
 }
 
 /* For medium and larger devices */
-@media (min-width: 768px) {
+
   .sticky-navbar {
     position: fixed;
     top: 0;
@@ -84,7 +84,7 @@
       opacity 1s,
       visibility 1s ;
   }
-}
+
 
 /* Navbar Styles */
 .navbar {
