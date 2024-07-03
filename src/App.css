@@ -75,19 +75,19 @@
 
 /* For medium and larger devices */
 
-  .sticky-navbar {
-    position: fixed;
-    top: 0;
-    visibility: visible;
-    opacity: 1;
-    transition:
-      opacity 1s,
-      visibility 1s ;
-  }
-
+.navbar-visible {
+  position: fixed;
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+  transition:
+    opacity 1s,
+    visibility 1s ;
+}
 
 /* Navbar Styles */
 .navbar {
+  padding: 0rem 6rem;
   background-color: var(--nav-bg-color);
   backdrop-filter: blur(5px); /* Blur effect for modern browsers */
   -webkit-backdrop-filter: blur(5px); /* Blur effect for Safari */
