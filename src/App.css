@@ -15,6 +15,17 @@
   background-color: #ffd60a; /* Yellow background color */
 }
 
+.nav-menu-button-icon {
+  width: 32px;
+  height: 32px;
+  color: white;
+  text-align: "center";
+}
+
+.nav-menu-button {
+  display: none;
+}
+
 .container-2 {
   display: flex;
   justify-content: center; /* Horizontally centers the child */
@@ -66,9 +77,7 @@
   top: 0;
   visibility: hidden;
   opacity: 0;
-  transition:
-    opacity 1s,
-    visibility 1s;
+  transition: opacity 1s, visibility 1s;
   /* Equivalent to
   transition: all 1s allow-discrete; */
 }
@@ -80,9 +89,7 @@
   top: 0;
   visibility: visible;
   opacity: 1;
-  transition:
-    opacity 1s,
-    visibility 1s ;
+  transition: opacity 1s, visibility 1s;
 }
 
 /* Navbar Styles */
@@ -101,20 +108,18 @@
   text-shadow: none;
   text-decoration: none;
   border-bottom: solid 1px transparent;
-  transition: 
-    text-shadow 0.3s ease-in-out,
-    border-bottom 0.3s ease-in-out;
+  transition: text-shadow 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
 }
 
 /* Hover and Focus Effects */
 .nav-link:hover,
 .nav-link:focus {
-    /* Blurred text-shadow */
-    text-decoration: none;
-    text-shadow: 0 0 15px var(--nav-text-shadow-hover); /* Adjust the shadow color and strength */
-    border-bottom: 2px solid var(--pico-contrast-hover-underline);
-    /* Apply animation only on hover */
-    /* animation: shadow-pulse 1s infinite; */
+  /* Blurred text-shadow */
+  text-decoration: none;
+  text-shadow: 0 0 15px var(--nav-text-shadow-hover); /* Adjust the shadow color and strength */
+  border-bottom: 2px solid var(--pico-contrast-hover-underline);
+  /* Apply animation only on hover */
+  /* animation: shadow-pulse 1s infinite; */
 }
 
 /* Text Shadow Pulse Animation */
@@ -130,14 +135,10 @@
   }
 } */
 
-
-
-
-
 /* Jade color for light color scheme (Default) */
 /* Can be forced with data-theme="light" */
-[data-theme=light],
-:root:not([data-theme=dark]) {
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
   --pico-text-selection-color: rgba(0, 166, 110, 0.25);
   --pico-primary: #007a50;
   --pico-primary-background: #007a50;
@@ -171,7 +172,7 @@
 
 /* Jade color for dark color scheme (Forced) */
 /* Enabled if forced with data-theme="dark" */
-[data-theme=dark] {
+[data-theme="dark"] {
   --pico-text-selection-color: rgba(0, 180, 120, 0.1875);
   --pico-primary: #00b478;
   --pico-primary-background: #007a50;
@@ -185,5 +186,18 @@
   --bg-color: rgb(19, 23, 31);
 }
 
+@media only screen and (max-width: 768px) {
+  .nav-menu-button {
+    display: flex;
+    align-items: center;
+  }
+  .navbar ul:not(:first-child) {
+    display: none;
+  }
+
+  .showSmallNav {
+    display: block;
+  }
 
 
+}
