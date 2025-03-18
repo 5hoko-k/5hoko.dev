@@ -94,9 +94,9 @@ function NavBar() {
             </a>
           </li>
         </ul>
-        <button onClick={showSmallNavbar} className="nav-menu-button" >
+        <i onClick={showSmallNavbar} className="nav-menu-button" >
           <Bars3Icon className="nav-menu-button-icon" />
-        </button>
+        </i>
       </nav>
     </>
   );
