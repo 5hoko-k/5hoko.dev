@@ -6,19 +6,22 @@ function NavBar() {
   const [prevScrollY, setPrevScrollY] = useState(0);
 
   function showSmallNavbar() {
-    let theNavbar = document.getElementById('thenavbar')
-    let ul1 = theNavbar.children[1]
-    let ul2 = theNavbar.children[2]
+      let theNavbar = document.getElementById('thenavbar')
 
-    console.log(theNavbar)
+      console.log('before')
+      console.log(theNavbar.classList.value)
 
-    if (ul1.className === '' || ul2.className === '') {
-        ul1.className = 'showSmallNav'
-        ul2.className = 'showSmallNav'
-    } else {
-        ul1.className = ''
-        ul2.className = ''
-    }
+      if (theNavbar.classList.contains('responsive')) {
+        theNavbar.classList.remove('responsive')
+      } else (
+        theNavbar.classList.add('responsive')
+      )
+
+    
+
+      console.log('after')
+      console.log(theNavbar.classList.value)
+
 
   }
 

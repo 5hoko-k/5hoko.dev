@@ -195,9 +195,37 @@
     display: none;
   }
 
-  .showSmallNav {
-    display: block;
+
+  .small-navbar-hidden {
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s, visibility 1s;
+    /* Equivalent to
+    transition: all 1s allow-discrete; */
+  }
+  
+  .small-navbar-visible {
+    position: fixed;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s, visibility 1s;
+    padding: 8px;
+    border: solid 2px black;
   }
 
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .navbar.responsive ul:not(:first-child) {
+    display: block;
+    position: fixed;
+    top: 0;
+    visibility: visible;
+  }  
 
 }
