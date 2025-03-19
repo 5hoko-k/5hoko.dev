@@ -1,4 +1,4 @@
-.site-repo-button {
+#repo-button a {
   padding: 8px 16px; /* Adjust padding as needed */
   border-radius: 20px; /* Makes the button pill-shaped by setting the border radius */
   background-color: yellow; /* Yellow background color */
@@ -11,7 +11,7 @@
   transition: background-color 0.3s ease; /* Smooth color transition */
 }
 
-.site-repo-button:hover {
+#repo-button a:hover {
   background-color: #ffd60a; /* Yellow background color */
 }
 
@@ -190,42 +190,40 @@
   .nav-menu-button {
     display: flex;
     align-items: center;
+    float: right;
   }
   .navbar ul:not(:first-child) {
     display: none;
   }
 
-
-  .small-navbar-hidden {
-    position: fixed;
-    top: 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s, visibility 1s;
-    /* Equivalent to
-    transition: all 1s allow-discrete; */
-  }
-  
-  .small-navbar-visible {
-    position: fixed;
-    top: 0;
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 1s, visibility 1s;
-    padding: 8px;
-    border: solid 2px black;
-  }
-
-
-}
-
-@media only screen and (max-width: 768px) {
-
-  .navbar.responsive ul:not(:first-child) {
+  .navbar.responsive #nav-list {
     display: block;
     position: fixed;
-    top: 0;
-    visibility: visible;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    top: 3.4rem;
+    left: 33.33%;
+    right: 33.33%;
+    background-color: var(--nav-bg-color);
+    backdrop-filter: blur(5px); /* Blur effect for modern browsers */
+    -webkit-backdrop-filter: blur(5px); /* Blur effect for Safari */
+
+  }  
+
+  .navbar.responsive #repo-button {
+    display: block;
+    position: fixed;
+    top: 0rem;
+    left: 33.33%;
+    right: 33.33%;
+  } 
+
+  .navbar.responsive li {
+    display: block;
+    top: 5;
+    text-align: center;
+
   }  
 
 }
+

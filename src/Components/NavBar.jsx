@@ -6,23 +6,17 @@ function NavBar() {
   const [prevScrollY, setPrevScrollY] = useState(0);
 
   function showSmallNavbar() {
-      let theNavbar = document.getElementById('thenavbar')
+    let theNavbar = document.getElementById("thenavbar");
 
-      console.log('before')
-      console.log(theNavbar.classList.value)
+    console.log("before");
+    console.log(theNavbar.classList.value);
 
-      if (theNavbar.classList.contains('responsive')) {
-        theNavbar.classList.remove('responsive')
-      } else (
-        theNavbar.classList.add('responsive')
-      )
+    if (theNavbar.classList.contains("responsive")) {
+      theNavbar.classList.remove("responsive");
+    } else theNavbar.classList.add("responsive");
 
-    
-
-      console.log('after')
-      console.log(theNavbar.classList.value)
-
-
+    console.log("after");
+    console.log(theNavbar.classList.value);
   }
 
   useEffect(() => {
@@ -48,7 +42,8 @@ function NavBar() {
 
   return (
     <>
-      <nav id='thenavbar'
+      <nav
+        id="thenavbar"
         className={
           showNav
             ? "navbar-visible container-fluid navbar"
@@ -60,7 +55,7 @@ function NavBar() {
             <strong>5HOKO</strong>
           </li>
         </ul>
-        <ul>
+        <ul id='nav-list'>
           <li>
             <a href="#about" className="contrast no-decoration">
               <span className="nav-link">About</span>
@@ -87,7 +82,7 @@ function NavBar() {
             </a>
           </li>
         </ul>
-        <ul>
+        <ul id='repo-button'>
           <li>
             <a
               href="https://github.com/5hoko-k/portfolio"
@@ -97,7 +92,7 @@ function NavBar() {
             </a>
           </li>
         </ul>
-        <i onClick={showSmallNavbar} className="nav-menu-button" >
+        <i onClick={showSmallNavbar} className="nav-menu-button">
           <Bars3Icon className="nav-menu-button-icon" />
         </i>
       </nav>
