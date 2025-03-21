@@ -28,6 +28,7 @@
 
 .container-2 {
   display: flex;
+  margin: 0 4rem;
   justify-content: center; /* Horizontally centers the child */
   align-items: center; /* Vertically centers the child */
   height: 100vh; /* Adjust as needed */
@@ -41,15 +42,15 @@
 .my-image {
   width: 500px;
   height: 500px;
-  box-shadow: 0 0 60px 75px var(--bg-color) inset;
 }
-.my-image img {
+.my-pfp-image {
   display: block;
   width: 100%;
   height: auto;
+  box-shadow: 0 0 60px 75px var(--bg-color) inset;
 }
 
-.my-auto {
+.vertical-margin-auto {
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -188,6 +189,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 4rem;
+  }
   .nav-menu-button {
     display: flex;
     align-items: center;
@@ -230,6 +234,18 @@
     padding: 4rem 2rem;
     overflow: hidden;
   }
+
+  .container-2 {
+   margin: 0 2rem;
+  }
+
+}
+
+@media screen and (max-width: 1048px) {
+  .my-pfp-image {
+    display: none;
+  }
+
 
 }
 
