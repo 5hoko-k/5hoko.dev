@@ -3,7 +3,7 @@ import { projects } from "../Data";
 function Projects() {
     return (
         <>
-        <section id='projects' className="section">
+        <section id='projects' className="section-height">
             
             <h1>Projects</h1>
             <div className="grid">

@@ -25,7 +25,7 @@ function Contact() {
   };
   return (
     <>
-      <section id="contact" className="section">
+      <section id="contact" className="section-height">
         <h2>Contact</h2>
 
         {/* contact info */}

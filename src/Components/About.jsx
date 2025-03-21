@@ -3,7 +3,7 @@ import Particulars from './Particulars'
 function About() {
     return (
         <>
-            <section id='about' className="section">
+            <section id='about' className="section-height">
                 <div className='grid'>
                     <div className='container-fluid my-auto'>
                         <Particulars />
@@ -11,7 +11,7 @@ function About() {
                             <nav>
                                 <ul>
                                     <li><a href='https://www.google.com/' role='button' className='secondary'>Work with me</a></li>
-                                    <li><a href='https://www.google.com/' role='button' className='contrast'>See my past work</a></li>
+                                    <li><a href='#projects' role='button' className='contrast'>See my past work</a></li>
                                 </ul>
                             </nav>
                         </div>
