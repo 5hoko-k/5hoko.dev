@@ -1,14 +1,19 @@
-function Particulars () {
-    return (
-        <> 
-        <hgroup>
-            <h1>Shoko S. Kimera</h1>
-            <h2>I code and stuff</h2>
-        </hgroup>
+function Particulars() {
+  return (
+    <>
+      <hgroup>
+        <h1>Shoko S. Kimera</h1>
+        <h2>Software Engineer</h2>
+      </hgroup>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quam in eius eaque earum laboriosam quis ab assumenda, atque libero necessitatibus sunt mollitia sapiente qui maxime nihil ut sit error.</p>
-        </>
-    )
+      <p>
+        I am an entry level software engineer with just about 3 years of experience in web
+        development, mobile application development, Artificial Intelligence and
+        cloud solution technologies with proficiency in JavaScript and Python. I
+        am an artist at heart so I love designing & creating truely artistic programmes.
+      </p>
+    </>
+  );
 }
 
 export default Particulars;
