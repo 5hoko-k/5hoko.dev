@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <main className="main-margin">
+      <main className="container-fluid main-paddings">
         <About />
         <Skills />
         <Projects />
