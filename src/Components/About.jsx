@@ -3,7 +3,7 @@ import Particulars from "./Particulars";
 function About() {
   return (
     <>
-      <section id="about" className="section-height container-2">
+      <section id="about" className="container-2">
         <div className="grid">
           <div className="container-fluid vertical-margin-auto">
             <Particulars />
@@ -29,7 +29,7 @@ function About() {
             </div>
           </div>
           <div className="my-pfp-image">
-            <img src="/5hoko.jpg" alt="Shoko-pfp" />
+            <img className="image-shape" src="/5hoko.jpg" alt="Shoko-pfp" />
           </div>
         </div>
       </section>

@@ -29,6 +29,7 @@
 .container-2 {
   display: flex;
   margin: 0 4rem;
+  padding-top: 3rem;
   justify-content: center; /* Horizontally centers the child */
   align-items: center; /* Vertically centers the child */
   height: 100vh; /* Adjust as needed */
@@ -43,9 +44,15 @@
   width: 500px;
   height: 500px;
 }
+
+.image-shape {
+  border-radius: 80rem 60rem 90rem 40rem/ 120rem 90rem 50rem 10rem;
+}
+
 .my-pfp-image {
   display: block;
-  width: 100%;
+  margin:auto;
+  max-width: 25rem;
   height: auto;
   box-shadow: 0 0 60px 75px var(--bg-color) inset;
 }
