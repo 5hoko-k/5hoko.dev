@@ -4,8 +4,8 @@ function About() {
   return (
     <>
       <section id="about" className="container-2">
-        <div className="grid">
-          <div className="container-fluid vertical-margin-auto">
+        <div className="header-flex">
+          <div className="flex-item">
             <Particulars />
             <div className="container-fluid">
               <nav>
@@ -28,7 +28,7 @@ function About() {
               </nav>
             </div>
           </div>
-          <div className="my-pfp-image">
+          <div className="my-pfp-image flex-item">
             <img className="image-shape" src="/5hoko.jpg" alt="Shoko-pfp" />
           </div>
         </div>

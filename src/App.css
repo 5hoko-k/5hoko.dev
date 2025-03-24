@@ -28,11 +28,11 @@
 
 .container-2 {
   display: flex;
-  margin: 0 4rem;
-  padding-top: 3rem;
+  margin: 0rem 4rem;
+  padding-top: 5rem;
   justify-content: center; /* Horizontally centers the child */
   align-items: center; /* Vertically centers the child */
-  height: 100vh; /* Adjust as needed */
+  min-height: 100vh; /* Adjust as needed */
 }
 
 .main-paddings {
@@ -51,7 +51,6 @@
 
 .my-pfp-image {
   display: block;
-  margin:auto;
   max-width: 25rem;
   height: auto;
   box-shadow: 0 0 60px 75px var(--bg-color) inset;
@@ -60,6 +59,22 @@
 .vertical-margin-auto {
   margin-top: auto;
   margin-bottom: auto;
+  min-width: 30rem;
+}
+
+.header-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 4rem 3rem;
+}
+
+.flex-item {
+  flex-basis: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-grow: 1;
+  min-width: 20rem;
 }
 
 .center {
@@ -243,16 +258,18 @@
   }
 
   .container-2 {
-   margin: 0 2rem;
+   display: flex;
+   margin: 4rem 2rem;
+   justify-content: center; /* Horizontally centers the child */
+   align-items: center; /* Vertically centers the child */
+   min-height: 100vh; /* Adjust as needed */
   }
 
 }
 
-@media screen and (max-width: 1048px) {
+/* @media screen and (max-width: 1048px) {
   .my-pfp-image {
     display: none;
   }
-
-
-}
+} */
 
