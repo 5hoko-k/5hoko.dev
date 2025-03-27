@@ -47,13 +47,13 @@
 
 .image-shape {
   border-radius: 80rem 60rem 90rem 40rem/ 120rem 90rem 50rem 10rem;
+  box-shadow: 0 0 60px 5px var(--bg-color-opposite-theme-2);
 }
 
 .my-pfp-image {
   display: block;
   max-width: 25rem;
   height: auto;
-  box-shadow: 0 0 60px 75px var(--bg-color) inset;
 }
 
 .vertical-margin-auto {
@@ -173,6 +173,7 @@
   --pico-primary-inverse: #fff;
   --nav-text-shadow-hover: rgb(0, 0, 0, 0.8);
   --nav-bg-color: rgb(255, 255, 255, 0.8);
+  --bg-color-opposite-theme-2: rgb(19, 23, 31, 0.4);
   --bg-color: rgb(255, 255, 255);
   --bg-color-opposite-theme: rgb(19, 23, 31);
 }
@@ -191,6 +192,7 @@
     --pico-primary-inverse: #fff;
     --nav-text-shadow-hover: rgb(255, 255, 255, 0.8);
     --nav-bg-color: rgb(19, 23, 31, 0.8);
+    --bg-color-opposite-theme-2: rgb(255, 255, 255, 0.4);
     --bg-color: rgb(19, 23, 31);
     --bg-color-opposite-theme: rgb(255, 255, 255);
   }
@@ -202,13 +204,14 @@
   --pico-text-selection-color: rgba(0, 180, 120, 0.1875);
   --pico-primary: #00b478;
   --pico-primary-background: #007a50;
-  --pico-primary-underline: rgba(0, 180, 120, 0.5);
+  --pico-primary-underline: rgba(0, 180, 120, 0.4);
   --pico-primary-hover: #00cc88;
   --pico-primary-hover-background: #00895a;
   --pico-primary-focus: rgba(0, 180, 120, 0.25);
   --pico-primary-inverse: #fff;
   --nav-text-shadow-hover: rgb(255, 255, 255, 0.8);
   --nav-bg-color: rgb(19, 23, 31, 0.8);
+  --bg-color-opposite-theme-2: rgb(255, 255, 255, 0.5);
   --bg-color: rgb(19, 23, 31);
   --bg-color-opposite-theme: rgb(255, 255, 255);
 }
