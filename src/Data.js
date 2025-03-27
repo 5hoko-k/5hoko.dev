@@ -16,7 +16,7 @@ export const skills = {
 export const projects = [
     { title: '5hoko\'s Anime Archive',
     image: '',
-    description: 'A library record of Anime experienced by 5hoko himself',
+    description: 'A library record of Anime',
     link: 'https://5-aa.vercel.app/' },
     { title: 'Somn1',
     image: '',
