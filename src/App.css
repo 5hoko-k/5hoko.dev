@@ -77,6 +77,10 @@
   min-width: 20rem;
 }
 
+.header-flex:first-child {
+  max-width: 70rem;
+}
+
 .center {
   display: flex;
   justify-content: center;
@@ -90,6 +94,12 @@
 .logo-icon-style {
   width: 70px;
   height: 70px;
+  transition: width 0.5s, height 0.5s;
+}
+
+.logo-icon-style:hover {
+  width: 90px;
+  height: 90px;
 }
 
 .section-height {
