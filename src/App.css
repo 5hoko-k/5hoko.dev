@@ -5,11 +5,11 @@
 }
 
 #repo-button a {
-  background-image: url("/public/GH-icon-dark-144.png"); 
+  background-image: var(--bg-github-mark); 
   background-position: center;
   background-size: contain;
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border: none; /* Removes the default button border */
   /* transition: background-color 0.3s ease; /* Smooth color transition */
 }
@@ -179,6 +179,7 @@
   --bg-color-opposite-theme-2: rgb(19, 23, 31, 0.4);
   --bg-color: rgb(255, 255, 255);
   --bg-color-opposite-theme: rgb(19, 23, 31);
+  --bg-github-mark: url(/public/github-mark.svg);
 }
 
 /* Jade color for dark color scheme (Auto) */
@@ -198,6 +199,7 @@
     --bg-color-opposite-theme-2: rgb(255, 255, 255, 0.4);
     --bg-color: rgb(19, 23, 31);
     --bg-color-opposite-theme: rgb(255, 255, 255);
+    --bg-github-mark: url(/public/github-mark-white.svg);
   }
 }
 
@@ -217,6 +219,7 @@
   --bg-color-opposite-theme-2: rgb(255, 255, 255, 0.5);
   --bg-color: rgb(19, 23, 31);
   --bg-color-opposite-theme: rgb(255, 255, 255);
+  --bg-github-mark: url(/public/github-mark-white.svg);
 }
 
 @media only screen and (max-width: 768px) {
@@ -280,7 +283,6 @@
    align-items: center; /* Vertically centers the child */
    min-height: 100vh; /* Adjust as needed */
   }
-
 }
 
 /* @media screen and (max-width: 1048px) {
