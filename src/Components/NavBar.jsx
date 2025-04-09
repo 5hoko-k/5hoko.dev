@@ -86,9 +86,9 @@ function NavBar() {
           <li>
             <a
               href="https://github.com/5hoko-k/portfolio"
-              className="site-repo-button"
+              className=""
             >
-              Site Repo
+              
             </a>
           </li>
         </ul>
