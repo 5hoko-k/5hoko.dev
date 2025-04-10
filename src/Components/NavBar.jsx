@@ -8,21 +8,14 @@ function NavBar() {
   function showSmallNavbar() {
     let theNavbar = document.getElementById("thenavbar");
 
-    console.log("before");
-    console.log(theNavbar.classList.value);
-
     if (theNavbar.classList.contains("responsive")) {
       theNavbar.classList.remove("responsive");
     } else theNavbar.classList.add("responsive");
 
-    console.log("after");
-    console.log(theNavbar.classList.value);
   }
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log("scroll Y" + window.scrollY);
-      // console.log('page Y Offset' + window.pageYOffset)
 
       if (window.scrollY > prevScrollY && window.scrollY > 650) {
         setShowNav(false);
@@ -31,7 +24,6 @@ function NavBar() {
       }
       setPrevScrollY(window.scrollY);
 
-      console.log(showNav);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -55,7 +47,7 @@ function NavBar() {
             <strong>5HOKO</strong>
           </li>
         </ul>
-        <ul id='nav-list'>
+        <ul id="nav-list">
           <li>
             <a href="#about" className="contrast no-decoration">
               <span className="nav-link">About</span>
@@ -82,13 +74,10 @@ function NavBar() {
             </a>
           </li>
         </ul>
-        <ul id='repo-button'>
+        <ul id="repo-button">
           <li>
-            <a
-              href="https://github.com/5hoko-k/portfolio"
-              className=""
-            >
-              
+            <a href="https://github.com/5hoko-k/portfolio">
+              <img src="/github-mark-white.png" alt="github-logo" />
             </a>
           </li>
         </ul>

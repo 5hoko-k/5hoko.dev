@@ -1,10 +1,10 @@
-#repo-button li {
+/* #repo-button li {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-#repo-button a {
+/* #repo-button a {
   background-image: var(--bg-github-mark); 
   background-position: center;
   background-size: contain;
@@ -12,7 +12,11 @@
   height: 25px;
   border: none; /* Removes the default button border */
   /* transition: background-color 0.3s ease; /* Smooth color transition */
-}
+
+  #repo-button img {
+    width: 30px;
+    height: 30px;
+  }
 
 /* #repo-button a:hover {
   background-color: #ffd60a;
@@ -41,11 +45,6 @@
 .main-paddings {
   padding: 4rem 6rem;
   overflow: hidden;
-}
-
-.my-image {
-  width: 500px;
-  height: 500px;
 }
 
 .image-shape {
